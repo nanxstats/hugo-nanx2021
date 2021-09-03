@@ -1,0 +1,35 @@
+<div class="my-4 my-lg-5 header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-8">
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                        {{ if .Site.Params.logofile }}
+                        <a href="{{ .Site.BaseURL }}">
+                            <img class="logo img-fluid d-block rounded-circle"
+                                src="{{ .Site.Params.logofile | absURL }}" alt="">
+                        </a>
+                        {{ end }}
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <a href="{{ .Site.BaseURL }}">
+                            <h1 class="name">{{ .Site.Params.pagetitle }}</h1>
+                        </a>
+
+                        <ul class="nav nav-primary">
+                            {{ range .Site.Menus.primary.ByWeight }}
+                            <li class="nav-item">
+                                <a class="nav-link{{ if .Identifier }} text-{{ .Identifier }}{{ end }}"
+                                    href="{{ .URL }}">
+                                    {{ .Pre }}
+                                    {{ .Name }}
+                                </a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
