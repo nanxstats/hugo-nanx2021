@@ -28,7 +28,7 @@
                         <ul class="list-unstyled d-inline">
                             {{ range .Params.tags }}
                             <li class="d-inline middot">
-                                <a href="{{ " /tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                                <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
                             </li>
                             {{ end }}
                         </ul>
