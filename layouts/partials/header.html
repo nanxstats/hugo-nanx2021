@@ -7,7 +7,7 @@
                         {{ if .Site.Params.logofile }}
                         <a href="{{ .Site.BaseURL }}">
                             <img class="logo img-fluid d-block rounded-circle"
-                                src="{{ .Site.Params.logofile | absURL }}" alt="">
+                                src="{{ .Site.Params.logofile | absURL }}" alt="{{ .Site.Params.logoalt }}">
                         </a>
                         {{ end }}
                     </div>
