@@ -64,14 +64,14 @@
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             {{ if .PrevInSection }}
-                            <div class="mt-4 text-left">
+                            <div class="mt-4 text-start">
                                 <a href="{{ .PrevInSection.Permalink }}">« {{ .PrevInSection.Title }}</a>
                             </div>
                             {{ end }}
                         </div>
                         <div class="col-12 col-lg-6">
                             {{ if .NextInSection }}
-                            <div class="mt-4 text-right">
+                            <div class="mt-4 text-end">
                                 <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} »</a>
                             </div>
                             {{ end }}
