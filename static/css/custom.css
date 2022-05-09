@@ -369,9 +369,16 @@ a:focus {
 }
 
 .site-social li:not(:last-child)::after {
-    content: '|';
+    content: '';
     color: #212529;
     margin: 0 0.3rem 0 0.5rem;
+}
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    fill: #6c757d;
 }
 
 /* < medium screens */
